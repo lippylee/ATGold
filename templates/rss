@@ -1,0 +1,17 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<author>LippyLee</author>
+<title>AT Gold Feed</title>
+
+<atom:link href="http://zeus.lipnet.org:5000" rel="self" type="application/rss+xml" />
+<description>AsiaTorrents' FreeLeech RSS Feed by LippyLee</description>
+    {%for title in titles %}
+    <item>
+        <title>{{titles[title]}}</title>
+        <link>{{url[titles[title]]}}&amp;uid={{uid}}&amp;pass={{password}}</link>
+        <description>{{titles[title]}}</description>
+        <pubDate></pubDate>
+    </item>
+    {%endfor%}
+</channel>
+</rss>
